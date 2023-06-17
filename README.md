@@ -46,23 +46,11 @@ This is a Django project for sentiment analysis. It aims to analyze the sentimen
    pip install -r requirements.txt
    ```
 
-## Model Setup
+## Model 
 
 This project utilizes the "cardiffnlp/twitter-roberta-base-sentiment" model for sentiment analysis. Before running the project, you need to download and set up the model by following these steps:
 
-1. Install the `transformers` library:
 
-   ```shell
-   pip install transformers
-   ```
-
-2. Download the "cardiffnlp/twitter-roberta-base-sentiment" model using the `transformers` library:
-
-   ```shell
-   python -c "from transformers import AutoTokenizer, AutoModelForSequenceClassification; AutoTokenizer.from_pretrained('cardiffnlp/twitter-roberta-base-sentiment'); AutoModelForSequenceClassification.from_pretrained('cardiffnlp/twitter-roberta-base-sentiment')"
-   ```
-
-   This command will download the necessary model files and cache them for future use.
 
 ## Database Setup
 
