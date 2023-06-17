@@ -48,7 +48,7 @@ This is a Django project for sentiment analysis. It aims to analyze the sentimen
 
 ## Model 
 
-This project utilizes the "cardiffnlp/twitter-roberta-base-sentiment" model for sentiment analysis. Before running the project, you need to download and set up the model by following these steps:
+This project utilizes the "cardiffnlp/twitter-roberta-base-sentiment" model for sentiment analysis.
 
 
 
