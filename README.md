@@ -1,6 +1,6 @@
-Certainly! Here's an updated version of the README file formatted for a GitHub markdown file:
+Certainly! Here's an updated version of the README file that includes the feature you described:
 
-```
+```markdown
 # analyze_sentiment_project
 
 ## Django Project
@@ -66,6 +66,40 @@ python manage.py runserver
 
 The server will start running at [http://localhost:8000/](http://localhost:8000/). Open this URL in your web browser to access the sentiment analysis project.
 
+## Feature: Sentiment Analysis API Endpoint
+
+This project includes a sentiment analysis API endpoint that performs sentiment analysis on provided text.
+
+- Endpoint: `/analyze`
+- HTTP Method: `POST`
+- Request Payload: JSON object with the following structure:
+  ```json
+  {
+    "text": "Text to be analyzed"
+  }
+  ```
+- Response: JSON response with the following structure:
+  ```json
+  {
+    "sentiment": "positive/negative/neutral"
+  }
+  ```
+
+Additionally, a welcome message and an example usage of the API can be obtained by sending a GET request to the sentiment analysis API endpoint.
+
+- Endpoint: `/analyze`
+- HTTP Method: `GET`
+- Response: JSON response containing a welcome message and an example usage of the API.
+
+```
+Handles GET requests to the sentiment analysis API endpoint.
+
+Returns:
+    Response: JSON response containing a welcome message and an example usage of the API.
 ```
 
-This README file is now formatted using GitHub-flavored Markdown, which includes code block highlighting and clickable URLs. It provides clear instructions for installation, database setup, and running the project. You can copy and paste this content into your GitHub repository's README.md file.
+Please note that the implementation details of the sentiment analysis, including the choice of machine learning model or library, will be specified in the project code.
+
+```
+
+Feel free to add this updated content to your existing README file, making sure to format it correctly using GitHub-flavored Markdown.
