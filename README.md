@@ -1,4 +1,4 @@
-Certainly! Here's an updated version of the README file that includes the feature you described:
+Certainly! Here's an updated version of the README file that includes information about the "cardiffnlp/twitter-roberta-base-sentiment" model:
 
 ```markdown
 # analyze_sentiment_project
@@ -45,6 +45,24 @@ This is a Django project for sentiment analysis. It aims to analyze the sentimen
    ```shell
    pip install -r requirements.txt
    ```
+
+## Model Setup
+
+This project utilizes the "cardiffnlp/twitter-roberta-base-sentiment" model for sentiment analysis. Before running the project, you need to download and set up the model by following these steps:
+
+1. Install the `transformers` library:
+
+   ```shell
+   pip install transformers
+   ```
+
+2. Download the "cardiffnlp/twitter-roberta-base-sentiment" model using the `transformers` library:
+
+   ```shell
+   python -c "from transformers import AutoTokenizer, AutoModelForSequenceClassification; AutoTokenizer.from_pretrained('cardiffnlp/twitter-roberta-base-sentiment'); AutoModelForSequenceClassification.from_pretrained('cardiffnlp/twitter-roberta-base-sentiment')"
+   ```
+
+   This command will download the necessary model files and cache them for future use.
 
 ## Database Setup
 
@@ -98,8 +116,8 @@ Returns:
     Response: JSON response containing a welcome message and an example usage of the API.
 ```
 
-Please note that the implementation details of the sentiment analysis, including the choice of machine learning model or library, will be specified in the project code.
+Please note that the "cardiffnlp/twitter-roberta-base-sentiment" model is used for sentiment analysis, and it will be automatically loaded during the execution of the sentiment analysis endpoint.
 
 ```
 
-Feel free to add this updated content to your existing README file, making sure to format it correctly using GitHub-flavored Markdown.
+Feel free to add this updated content to your existing README file, ensuring proper formatting using GitHub
